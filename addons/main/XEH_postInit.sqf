@@ -1,0 +1,19 @@
+#include "script_component.hpp"
+
+["CAManBase", "fired", {
+
+    params ["_unit", "_weapon", "", "", "_ammo", "", "_projectile"];
+    if (_weapon isNotEqualTo "Throw") exitWith {};
+
+    private _cfg = configFile >> "CfgAmmo" >> _ammo;
+    if (getNumber (_cfg >> "mark_isSignalFlare") isEqualTo 1) then {
+
+        private _fuzeTime = getNumber (_cfg >> "explosionTime");
+        private _timeToLive = getNumber (_cfg >> "timeToLive");
+        private _color = getText (_cfg >> "mark_markerColor");
+        private _type = getText (_cfg >> "mark_markerType");
+
+        [FUNCMAIN(handleMarker), [_projectile, _color, _timeToLive, _unit, _type], _fuzeTime] call CBA_fnc_waitAndExecute;
+    };
+
+}, true, [], true] call CBA_fnc_addClassEventHandler;

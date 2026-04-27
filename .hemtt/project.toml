@@ -1,0 +1,34 @@
+name = "Mark'em"
+prefix = "mark"
+mainprefix = "ik"
+author = "Im Kreepy"
+
+[files]
+include = [
+    "LICENSE.txt",
+    "changelog.md",
+    "README.md",
+]
+exclude = [
+    "addons/main/logos/pngs/*.png",
+    "COPYING",
+]
+
+[version]
+path = "addons/main/script_version.hpp"
+git_hash = 0
+
+[hemtt.release]
+sign = false
+archive = true
+
+[hemtt.launch.default]
+presets = [
+    "MapFlares Dev", # .html presets from .hemtt/presets/
+]
+
+mission = "Test.VR"
+executable = "arma3profiling_x64" # Default: "arma3_x64"
+file_patching = true # Default: true
+binarize = false # Default: false
+rapify = true # Default: true 

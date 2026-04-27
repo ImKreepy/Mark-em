@@ -4,10 +4,10 @@
 
 <p align="center">
     <a href="https://github.com/ImKreepy/Mark-em/releases/Latest">
-        <img src="https://img.shields.io/github/v/release/ImKreepy/Mark-em?label=Version&color=00e6f6" alt="UNSC Infirmary Version">
+        <img src="https://img.shields.io/github/v/release/ImKreepy/Mark-em?label=Version&color=00e6f6" alt="Mark'em Version">
     </a>
     <a href="https://github.com/ImKreepy/Mark-em/blob/master/LICENSE">
-        <img src="https://img.shields.io/github/license/ImKreepy/Mark-em?style=flat-square&label=License&color=fdd700" alt="UNSC Infirmary License">
+        <img src="https://img.shields.io/github/license/ImKreepy/Mark-em?style=flat-square&label=License&color=fdd700" alt="Mark'em License">
     </a><!-- 
     <a href="https://discord.gg/UmUrzBTxEn">
         <img src="https://img.shields.io/badge/Discord-Join-darkviolet.svg?style=flat-square" alt="UNSC Infirmary Discord">

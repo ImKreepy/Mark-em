@@ -43,15 +43,15 @@ class CfgMods {
         tooltip = "Mark 'em";
         tooltipOwned = "Mark 'em Owned";
 
-        picture = "\ik\mark\addons\main\logos\mmf_logotitle_512_ca.paa"; // Logo displayed in expansions menu
-        logo = "\ik\mark\addons\main\logos\mmf_logo_ca.paa"; // Image displayed on the main menu (128x)
-        logoOver = "\ik\mark\addons\main\logos\mmf_logoover_ca.paa"; // Image displayed when the mouse hovers over the image on the main menu (128x)
-        logoSmall = "\ik\mark\addons\main\logos\mmf_logo_small_ca.paa"; // Image displayed in Arsenal or 3DEN (32x)
+        picture = "\ik\mmf\addons\main\logos\mmf_logotitle_512_ca.paa"; // Logo displayed in expansions menu
+        logo = "\ik\mmf\addons\main\logos\mmf_logo_ca.paa"; // Image displayed on the main menu (128x)
+        logoOver = "\ik\mmf\addons\main\logos\mmf_logoover_ca.paa"; // Image displayed when the mouse hovers over the image on the main menu (128x)
+        logoSmall = "\ik\mmf\addons\main\logos\mmf_logo_small_ca.paa"; // Image displayed in Arsenal or 3DEN (32x)
 
         overview = CSTRING(Mod_Description);
         overviewText = "Mark 'em";
-        overviewPicture = "\ik\mark\addons\main\logos\mmf_logo_ca.paa";
-        overviewFootnote = "\ik\mark\addons\main\logos\mmf_logo_ca.paa";
+        overviewPicture = "\ik\mmf\addons\main\logos\mmf_logo_ca.paa";
+        overviewFootnote = "\ik\mmf\addons\main\logos\mmf_logo_ca.paa";
 	};
 };
 

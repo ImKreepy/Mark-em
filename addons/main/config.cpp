@@ -18,7 +18,7 @@ class CfgPatches {
 
 class CfgAddons {
     class PreloadAddons {
-        class mark_Preload {
+        class mmf_Preload {
             list[] = {
                 "cba_main",
                 "cba_xeh",
@@ -32,26 +32,26 @@ class CfgAddons {
 class CfgMods {
     class Mod_Base;
 	class Markem: Mod_Base {
-		dir="@Mark'em";
-		name = "Mark'em";
+		dir="@Mark 'em";
+		name = "Mark 'em";
         author = "Im Kreepy";
         description = CSTRING(Mod_Description);
 
         action = "https://github.com/ImKreepy/Mark'em";
         actionName = "GitHub";
 
-        tooltip = "Mark'em";
-        tooltipOwned = "Mark'em Owned";
+        tooltip = "Mark 'em";
+        tooltipOwned = "Mark 'em Owned";
 
-        picture = "\ik\mark\addons\main\logos\mark_logotitle_512_ca.paa"; // Logo displayed in expansions menu
-        logo = "\ik\mark\addons\main\logos\mark_logo_ca.paa"; // Image displayed on the main menu (128x)
-        logoOver = "\ik\mark\addons\main\logos\mark_logoover_ca.paa"; // Image displayed when the mouse hovers over the image on the main menu (128x)
-        logoSmall = "\ik\mark\addons\main\logos\mark_logo_small_ca.paa"; // Image displayed in Arsenal or 3DEN (32x)
+        picture = "\ik\mark\addons\main\logos\mmf_logotitle_512_ca.paa"; // Logo displayed in expansions menu
+        logo = "\ik\mark\addons\main\logos\mmf_logo_ca.paa"; // Image displayed on the main menu (128x)
+        logoOver = "\ik\mark\addons\main\logos\mmf_logoover_ca.paa"; // Image displayed when the mouse hovers over the image on the main menu (128x)
+        logoSmall = "\ik\mark\addons\main\logos\mmf_logo_small_ca.paa"; // Image displayed in Arsenal or 3DEN (32x)
 
         overview = CSTRING(Mod_Description);
-        overviewText = "Mark'em";
-        overviewPicture = "\ik\mark\addons\main\logos\mark_logo_ca.paa";
-        overviewFootnote = "\ik\mark\addons\main\logos\mark_logo_ca.paa";
+        overviewText = "Mark 'em";
+        overviewPicture = "\ik\mark\addons\main\logos\mmf_logo_ca.paa";
+        overviewFootnote = "\ik\mark\addons\main\logos\mmf_logo_ca.paa";
 	};
 };
 
@@ -59,18 +59,18 @@ class CfgMods {
 
 class CfgMarkers {
     class Flag;
-    class mark_SmokeMarker : Flag {
+    class mmf_SmokeMarker : Flag {
         scope = 2;
         name = "Smoke Flare";
-        icon = QPATHTOF(data\mark_flare_smoke.paa);
-        texture = QPATHTOF(data\mark_flare_smoke.paa);
+        icon = QPATHTOF(data\mmf_flare_smoke.paa);
+        texture = QPATHTOF(data\mmf_flare_smoke.paa);
         color[] = { 0, 0, 0, 1 };
         shadow = 0;
     };
-    class mark_LightMarker : mark_SmokeMarker {
+    class mmf_LightMarker : mmf_SmokeMarker {
         scope = 2;
         name = "Light Flare";
-        icon = QPATHTOF(data\mark_flare_light.paa);
-        texture = QPATHTOF(data\mark_flare_light.paa);
+        icon = QPATHTOF(data\mmf_flare_light.paa);
+        texture = QPATHTOF(data\mmf_flare_light.paa);
     };
 };

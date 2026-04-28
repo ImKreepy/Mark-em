@@ -1,6 +1,6 @@
 #define MAINPREFIX ik
-#define PREFIX mark
-#define PREFIX_BEAUTIFIED Mark'em
+#define PREFIX mmf
+#define PREFIX_BEAUTIFIED Mark 'em
 
 #include "script_version.hpp"
 #define VERSION MAJOR.MINOR

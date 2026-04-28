@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project name="Map_Flares">
+<Project name="Mark 'em">
     <Package name="Main">
-        <Key ID="STR_MARK_Main_Mod_Description">
-            <English>Mark'em is a mod that marks the position of flares on the map, making it easier for players to locate them and use them effectively in combat situations.</English>
+        <Key ID="STR_mmf_Main_Mod_Description">
+            <English>Mark 'em is a mod that marks the position of flares on the map, making it easier for players to locate them and use them effectively in combat situations.</English>
         </Key>
-        <Key ID="STR_MARK_Main_RefreshRate_Description">
+        <Key ID="STR_mmf_Main_RefreshRate_Description">
             <English>Controls the refresh rate of the map markers' positions. Increasing this value can help with performance issues. 0 = Per Frame.</English>
         </Key>
-        <Key ID="STR_MARK_Main_RefreshRate_DisplayName">
+        <Key ID="STR_mmf_Main_RefreshRate_DisplayName">
             <English>Refresh Rate</English>
         </Key>
-        <Key ID="STR_MARK_Main_URL">
+        <Key ID="STR_mmf_Main_URL">
             <English>https://github.com/ImKreepy/Map_Flares</English>
         </Key>
-        <Key ID="STR_MARK_Main_durationHardCap_Description">
+        <Key ID="STR_mmf_Main_durationHardCap_Description">
             <English>Controls the maximum duration for which map markers will be displayed.</English>
         </Key>
-        <Key ID="STR_MARK_Main_durationHardCap_DisplayName">
+        <Key ID="STR_mmf_Main_durationHardCap_DisplayName">
             <English>Duration Hard Cap</English>
         </Key>
-        <Key ID="STR_MARK_Main_durationHardCap_enabled_Description">
+        <Key ID="STR_mmf_Main_durationHardCap_enabled_Description">
             <English>Enables the duration hard cap for map markers. This will end the position updates ahead of the grenade's timeToLive.</English>
         </Key>
-        <Key ID="STR_MARK_Main_durationHardCap_enabled_DisplayName">
+        <Key ID="STR_mmf_Main_durationHardCap_enabled_DisplayName">
             <English>Duration Hard Cap Enabled</English>
         </Key>
     </Package>

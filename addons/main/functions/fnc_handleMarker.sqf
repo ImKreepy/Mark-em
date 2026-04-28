@@ -13,7 +13,7 @@
  * None <NONE>
  *
  * Example:
- * [_nade, [0.5,0.5,0.5], 60, player, "mark_SmokeMarker"] call mark_fnc_handleMarker
+ * [_nade, [0.5,0.5,0.5], 60, player, "mmf_SmokeMarker"] call mmf_fnc_handleMarker
  *
  * Public: No
  */

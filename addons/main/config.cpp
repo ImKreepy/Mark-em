@@ -37,7 +37,7 @@ class CfgMods {
         author = "Im Kreepy";
         description = CSTRING(Mod_Description);
 
-        action = "https://github.com/ImKreepy/Mark'em";
+        action = "https://github.com/ImKreepy/Mark-em";
         actionName = "GitHub";
 
         tooltip = "Mark 'em";

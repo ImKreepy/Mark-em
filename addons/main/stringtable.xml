@@ -25,5 +25,11 @@
         <Key ID="STR_mmf_Main_durationHardCap_enabled_DisplayName">
             <English>Duration Hard Cap Enabled</English>
         </Key>
+        <Key ID="showGridCoordinates_Description">
+            <English>Enables the display of grid coordinates for map markers.</English>
+        </Key>
+        <Key ID="showGridCoordinates_DisplayName">
+            <English>Show Grid Coordinates</English>
+        </Key>
     </Package>
 </Project>

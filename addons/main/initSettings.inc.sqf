@@ -28,3 +28,13 @@
     {},
     false
 ] call CBA_fnc_addSetting;
+[
+    QGVAR(showGridCoordinates),
+    "CHECKBOX",
+    [CSTRING(showGridCoordinates_DisplayName), CSTRING(showGridCoordinates_Description)],
+    [QUOTE(PREFIX_BEAUTIFIED), "General"],
+    true,
+    true,
+    {},
+    false
+] call CBA_fnc_addSetting;

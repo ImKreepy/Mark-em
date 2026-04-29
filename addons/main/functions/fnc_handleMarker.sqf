@@ -24,14 +24,30 @@ TRACE_1("fnc_handleMarker",_this);
 private _marker = createMarkerLocal [format ["%1_marker", _projectile], position _projectile, -1, _unit];
 _marker setMarkerTypeLocal _type;
 _marker setMarkerColorLocal _color;
+GVAR(showGridCoordinates) = false;
+if (GVAR(showGridCoordinates)) then {
+    GVAR(markerPFH) = [{
 
-GVAR(markerPFH) = [{
+        (_this select 0) params ["_projectile", "_marker"];
 
-    (_this select 0) params ["_projectile", "_marker"];
+        private _pos = position _projectile;
+        private _grid = mapGridPosition _pos;
 
-    _marker setMarkerPos position _projectile;
+        _marker setMarkerTextLocal _grid;
+        _marker setMarkerPos _pos;
 
-}, GVAR(refreshRate), [_projectile, _marker]] call CBA_fnc_addPerFrameHandler;
+    }, GVAR(refreshRate), [_projectile, _marker]] call CBA_fnc_addPerFrameHandler;
+} else {
+    GVAR(markerPFH) = [{
+
+        (_this select 0) params ["_projectile", "_marker"];
+
+        private _pos = position _projectile;
+        
+        _marker setMarkerPos _pos;
+
+    }, GVAR(refreshRate), [_projectile, _marker]] call CBA_fnc_addPerFrameHandler;
+};
 
 private _killPFH = _timeToLive;
 if (GVAR(durationHardCap_enabled)) then {

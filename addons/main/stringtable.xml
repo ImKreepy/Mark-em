@@ -11,7 +11,7 @@
             <English>Refresh Rate</English>
         </Key>
         <Key ID="STR_mmf_Main_URL">
-            <English>https://github.com/ImKreepy/Map_Flares</English>
+            <English>https://github.com/ImKreepy/Mark-em</English>
         </Key>
         <Key ID="STR_mmf_Main_durationHardCap_Description">
             <English>Controls the maximum duration for which map markers will be displayed.</English>

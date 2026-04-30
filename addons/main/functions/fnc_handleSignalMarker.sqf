@@ -13,18 +13,18 @@
  * None <NONE>
  *
  * Example:
- * [_nade, [0.5,0.5,0.5], 60, player, "mmf_SmokeMarker"] call mmf_fnc_handleMarker
+ * [_nade, [0.5,0.5,0.5], 60, player, "mmf_SmokeMarker"] call mmf_fnc_handleSignalMarker
  *
  * Public: No
  */
 
 params ["_projectile", "_color", "_timeToLive", "_unit", "_type"];
-TRACE_1("fnc_handleMarker",_this);
+TRACE_1("fnc_handleSignalMarker",_this);
 
 private _marker = createMarkerLocal [format ["%1_marker", _projectile], position _projectile, -1, _unit];
 _marker setMarkerTypeLocal _type;
 _marker setMarkerColorLocal _color;
-GVAR(showGridCoordinates) = false;
+
 if (GVAR(showGridCoordinates)) then {
     GVAR(markerPFH) = [{
 

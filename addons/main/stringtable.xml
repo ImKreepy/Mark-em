@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="Mark 'em">
     <Package name="Main">
+        <Key ID="STR_mmf_Main_CompatibilitySettings_Category">
+            <English>Compatibility</English>
+        </Key>
+        <Key ID="STR_mmf_Main_GeneralSettings_Category">
+            <English>General</English>
+        </Key>
         <Key ID="STR_mmf_Main_Mod_Description">
             <English>Mark 'em is a mod that marks the position of flares on the map, making it easier for players to locate them and use them effectively in combat situations.</English>
         </Key>
@@ -12,6 +18,18 @@
         </Key>
         <Key ID="STR_mmf_Main_URL">
             <English>https://github.com/ImKreepy/Mark-em</English>
+        </Key>
+        <Key ID="STR_mmf_Main_Vanilla_EnableFlares_Description">
+            <English>Enables the display of flare markers for vanilla grenades.</English>
+        </Key>
+        <Key ID="STR_mmf_Main_Vanilla_EnableFlares_DisplayName">
+            <English>Vanilla Enable Flares</English>
+        </Key>
+        <Key ID="STR_mmf_Main_Vanilla_EnableSmokes_Description">
+            <English>Enables the display of smoke markers for vanilla grenades.</English>
+        </Key>
+        <Key ID="STR_mmf_Main_Vanilla_EnableSmokes_DisplayName">
+            <English>Vanilla Enable Smokes</English>
         </Key>
         <Key ID="STR_mmf_Main_durationHardCap_Description">
             <English>Controls the maximum duration for which map markers will be displayed.</English>

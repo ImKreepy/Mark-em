@@ -23,12 +23,12 @@ class CfgPatches {
 class CfgAmmo {
     class JCA_GrenadeAmmo_HandFlare_Base;
     class JCA_GrenadeAmmo_SignalFlare_Red: JCA_GrenadeAmmo_HandFlare_Base {
-        mmf_isSignalFlare = 1;
+        mmf_isSignalMarker = 1;
         mmf_markerColor = "ColorRed";
         mmf_markerType = "mmf_SmokeMarker";
     };
     class JCA_GrenadeAmmo_SignalFlare_Green: JCA_GrenadeAmmo_HandFlare_Base {
-        mmf_isSignalFlare = 1;
+        mmf_isSignalMarker = 1;
         mmf_markerColor = "ColorGreen";
         mmf_markerType = "mmf_SmokeMarker";
     };

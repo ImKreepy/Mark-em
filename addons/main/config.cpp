@@ -7,7 +7,7 @@ class CfgPatches {
         url = ECSTRING(main,URL);
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"cba_main","cba_xeh",};
+        requiredAddons[] = {"cba_main","cba_xeh","A3_Weapons_F"};
         units[] = {};
         weapons[] = {};
         VERSION_CONFIG;
@@ -27,7 +27,6 @@ class CfgAddons {
         };
     };
 };
-
 
 class CfgMods {
     class Mod_Base;

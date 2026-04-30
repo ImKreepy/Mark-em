@@ -20,22 +20,22 @@ class CfgPatches {
 class CfgAmmo {
     class SKY_JCA_GrenadeAmmo_SignalFlare_Base;
 	class SKY_JCA_GrenadeAmmo_SignalFlare_White: SKY_JCA_GrenadeAmmo_SignalFlare_Base {
-        mmf_isSignalFlare = 1;
+        mmf_isSignalMarker = 1;
         mmf_markerColor = "ColorWhite";
         mmf_markerType = "mmf_SmokeMarker";
 	};
 	class SKY_JCA_GrenadeAmmo_SignalFlare_Purple: SKY_JCA_GrenadeAmmo_SignalFlare_Base {
-        mmf_isSignalFlare = 1;
+        mmf_isSignalMarker = 1;
         mmf_markerColor = "ColorCIV";
         mmf_markerType = "mmf_SmokeMarker";
 	};
 	class SKY_JCA_GrenadeAmmo_SignalFlare_Blue: SKY_JCA_GrenadeAmmo_SignalFlare_Base {
-        mmf_isSignalFlare = 1;
+        mmf_isSignalMarker = 1;
         mmf_markerColor = "ColorBlue";
         mmf_markerType = "mmf_SmokeMarker";
 	};
 	class SKY_JCA_GrenadeAmmo_SignalFlare_Yellow: SKY_JCA_GrenadeAmmo_SignalFlare_Base {
-        mmf_isSignalFlare = 1;
+        mmf_isSignalMarker = 1;
         mmf_markerColor = "ColorYellow";
         mmf_markerType = "mmf_SmokeMarker";
 	};

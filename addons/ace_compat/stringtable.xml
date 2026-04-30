@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="Mark 'em">
+    <Package name="ACE Compat">
+        <Key ID="STR_mmf_ACE_Compat_EnableFlares_Description">
+            <English>Enables the display of flare markers for ACE grenades.</English>
+        </Key>
+        <Key ID="STR_mmf_ACE_Compat_EnableFlares_DisplayName">
+            <English>ACE Enable Flares</English>
+        </Key>
+        <Key ID="STR_mmf_ACE_Compat_EnableSmokes_Description">
+            <English>Enables the display of smoke markers for ACE grenades.</English>
+        </Key>
+        <Key ID="STR_mmf_ACE_Compat_EnableSmokes_DisplayName">
+            <English>ACE Enable Smokes</English>
+        </Key>
+    </Package>
+</Project>

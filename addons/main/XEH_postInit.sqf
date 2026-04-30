@@ -1,12 +1,14 @@
 #include "script_component.hpp"
 
 if (GVAR(Vanilla_EnableFlares) isEqualTo false) then {
-    missionNamespace getVariable [QEGVAR(main,grenadeExcludeList),[]];
-    missionNamespace setVariable [QEGVAR(main,grenadeExcludeList),[],true];
+    private _oldArray = missionNamespace getVariable [QGVAR(grenadeExcludeList),[]];
+    private _newArray = _oldArray + [];
+     missionNamespace setVariable [QGVAR(grenadeExcludeList),_newArray,true];
 };
 if (GVAR(Vanilla_EnableSmokes) isEqualTo false) then {
-    missionNamespace getVariable [QEGVAR(main,grenadeExcludeList),[]];
-    missionNamespace setVariable [QEGVAR(main,grenadeExcludeList),[],true];
+    private _oldArray = missionNamespace getVariable [QGVAR(grenadeExcludeList),[]];
+    private _newArray = _oldArray + ["SmokeShellRed","SmokeShellGreen","SmokeShellYellow","SmokeShellPurple","SmokeShellBlue","SmokeShellOrange","G_40mm_SmokeRed","G_40mm_SmokeGreen","G_40mm_SmokeYellow","G_40mm_SmokePurple","G_40mm_SmokeBlue","G_40mm_SmokeOrange"];
+    missionNamespace setVariable [QGVAR(grenadeExcludeList),_newArray,true];
 };
 
 ["CAManBase", "fired", {

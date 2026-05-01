@@ -17,7 +17,7 @@
 <p align="center">
     <body><b>Mark 'em</b> is a mod that marks the position of flares on the map, making it easier for players to locate them and use them effectively in combat situations.<br>Creating Compatibility for <b>Mark 'em</b> is extremely simple; all config is done inside the CfgAmmo.<br><br>
         <ul>
-            <li><mark>mmf_isSignalFlare = 1;</mark> enables the framework for your flare.</li>
+            <li><mark>mmf_isSignalMarker = 1;</mark> enables the framework for your flare.</li>
             <li><mark>mmf_markerColor = "ColorHere";</mark> sets the marker color of your flare. Replacing <mark>ColorHere</mark> with a <a href="https://community.bistudio.com/wiki/Arma_3:_CfgMarkerColors">CfgMarkerColor class</a> or can be simple RGBA <i>#(r,g,b,a)</i>.</li>
             <li><mark>mmf_markerType = "MarkerType"</mark>; is the type of map marker that will show on the map. Replacing <mark>MarkerType</mark> with either <mark>mmf_SmokeMarker</mark>, <mark>mmf_LightMarker</mark>, or your own custom CfgMarker class.</li>
         </ul>

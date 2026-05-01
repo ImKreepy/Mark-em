@@ -15,7 +15,7 @@ if (GVAR(Vanilla_EnableSmokes) isEqualTo false) then {
 
     params ["_unit", "_weapon", "", "", "_ammo", "", "_projectile"];
     if (_weapon isNotEqualTo "Throw") exitWith {};
-    if (isPlayer _unit) then {
+    if (isPlayer _unit && local _unit) then {
         ["mmf_throwGrenadePlayer", [_unit, _ammo, _projectile]] call CBA_fnc_localEvent;
     };
 

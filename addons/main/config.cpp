@@ -87,4 +87,22 @@ class CfgMarkers {
         icon = QPATHTOF(data\mmf_flare_light.paa);
         texture = QPATHTOF(data\mmf_flare_light.paa);
     };
+    class mmf_Resupply_Ammo : mmf_SmokeMarker {
+        scope = 2;
+        name = "Ammo Resupply";
+        icon = QPATHTOF(data\mmf_resupply_ammo.paa);
+        texture = QPATHTOF(data\mmf_resupply_ammo.paa);
+    };
+    class mmf_Resupply_Medical : mmf_SmokeMarker {
+        scope = 2;
+        name = "Medical Resupply";
+        icon = QPATHTOF(data\mmf_resupply_medical.paa);
+        texture = QPATHTOF(data\mmf_resupply_medical.paa);
+    };
+    class mmf_Resupply_Explosives : mmf_SmokeMarker {
+        scope = 2;
+        name = "Explosives Resupply";
+        icon = QPATHTOF(data\mmf_resupply_explosives.paa);
+        texture = QPATHTOF(data\mmf_resupply_explosives.paa);
+    };
 };

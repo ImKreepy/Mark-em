@@ -21,7 +21,12 @@
 params ["_projectile", "_color", "_timeToLive", "_unit", "_type"];
 TRACE_1("fnc_handleSignalMarker",_this);
 
-private _marker = createMarkerLocal [format ["%1_marker", _projectile], position _projectile, -1, _unit];
+private _channel = -1;
+if (isMultiplayer) then {
+    _channel = 1;
+};
+
+private _marker = createMarkerLocal [format ["%1_marker", _projectile], position _projectile, _channel, _unit];
 _marker setMarkerTypeLocal _type;
 _marker setMarkerColorLocal _color;
 

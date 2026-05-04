@@ -4,17 +4,50 @@
         <Key ID="STR_mmf_Main_CompatibilitySettings_Category">
             <English>Compatibility</English>
         </Key>
+        <Key ID="STR_mmf_Main_Customs_Description">
+            <English>List of custom grenades for quick compatibility, array of arrays. PLEASE DO CONFIG IF ABLE!!</English>
+        </Key>
+        <Key ID="STR_mmf_Main_Customs_DisplayName">
+            <English>Custom List</English>
+        </Key>
         <Key ID="STR_mmf_Main_GeneralSettings_Category">
             <English>General</English>
         </Key>
+        <Key ID="STR_mmf_Main_Handgun_Count_Description">
+            <English>How many handgun magazines, per person, should be added to Ammo Resupplies.</English>
+        </Key>
+        <Key ID="STR_mmf_Main_Handgun_Count_DisplayName">
+            <English>Handgun Magazines</English>
+        </Key>
+        <Key ID="STR_mmf_Main_Launcher_Count_Description">
+            <English>How many launcher magazines, per person, should be added to Ammo Resupplies.</English>
+        </Key>
+        <Key ID="STR_mmf_Main_Launcher_Count_DisplayName">
+            <English>Launcher Magazines</English>
+        </Key>
+        <Key ID="STR_mmf_Main_Medical_Items_Description">
+            <English>What items and ammounts are added to medical resupplies.</English>
+        </Key>
+        <Key ID="STR_mmf_Main_Medical_Items_DisplayName">
+            <English>Medical Items</English>
+        </Key>
         <Key ID="STR_mmf_Main_Mod_Description">
             <English>Mark 'em is a mod that marks the position of flares on the map, making it easier for players to locate them and use them effectively in combat situations.</English>
+        </Key>
+        <Key ID="STR_mmf_Main_Primary_Count_Description">
+            <English>How many primary magazines, per person, should be added to Ammo Resupplies.</English>
+        </Key>
+        <Key ID="STR_mmf_Main_Primary_Count_DisplayName">
+            <English>Primary Magazines</English>
         </Key>
         <Key ID="STR_mmf_Main_RefreshRate_Description">
             <English>Controls the refresh rate of the map markers' positions. Increasing this value can help with performance issues. 0 = Per Frame.</English>
         </Key>
         <Key ID="STR_mmf_Main_RefreshRate_DisplayName">
             <English>Refresh Rate</English>
+        </Key>
+        <Key ID="STR_mmf_Main_ResupplySettings_Category">
+            <English>Resupplies</English>
         </Key>
         <Key ID="STR_mmf_Main_URL">
             <English>https://github.com/ImKreepy/Mark-em</English>

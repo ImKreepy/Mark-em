@@ -26,7 +26,7 @@ if (isMultiplayer) then {
     _channel = 1;
 };
 
-private _marker = createMarkerLocal [format ["%1_marker", _projectile], position _projectile, _channel, _unit];
+private _marker = createMarkerLocal [format ["%1_signalMarker", _projectile], position _projectile, _channel, _unit];
 _marker setMarkerTypeLocal _type;
 _marker setMarkerColorLocal _color;
 

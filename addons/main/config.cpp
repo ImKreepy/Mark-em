@@ -10,6 +10,10 @@ class CfgPatches {
         requiredAddons[] = {"cba_main","cba_xeh","A3_Weapons_F"};
         units[] = {};
         weapons[] = {};
+        magazines[] = {
+            "mmf_Smoke_g_ar_green",
+            "mmf_Smoke_g_mr_green"
+        };
         ammo[] = {
             "SmokeShellRed",
             "SmokeShellGreen",
@@ -22,7 +26,11 @@ class CfgPatches {
             "G_40mm_SmokeYellow",
             "G_40mm_SmokePurple",
             "G_40mm_SmokeBlue",
-            "G_40mm_SmokeOrange"
+            "G_40mm_SmokeOrange",
+            "mmf_Smoke_g_ar_green",
+            "mmf_Smoke_g_mr_green",
+            "mmf_Smoke_ugl_ar_green",
+            "mmf_Smoke_ugl_mr_green"
         };
         VERSION_CONFIG;
 
@@ -36,6 +44,7 @@ class CfgAddons {
             list[] = {
                 "cba_main",
                 "cba_xeh",
+                "A3_Weapons_F",
                 QUOTE(MAIN_ADDON)
             };
         };
@@ -70,6 +79,8 @@ class CfgMods {
 
 #include "CfgEventHandlers.hpp"
 #include "CfgAmmo.hpp"
+#include "CfgMagazines.hpp"
+#include "CfgWeapons.hpp"
 
 class CfgMarkers {
     class Flag;

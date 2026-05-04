@@ -63,4 +63,25 @@ class CfgAmmo {
         mmf_markerColor = "ColorOrange";
         mmf_markerType = "mmf_SmokeMarker";
     };
+
+    class mmf_Smoke_g_ar_green: SmokeShellGreen {
+        mmf_isSignalMarker = 0;
+        mmf_isSignalResupply = 1;
+        mmf_resupplyType = 0;
+    };
+    class mmf_Smoke_g_mr_green: SmokeShellGreen {
+        mmf_isSignalMarker = 0;
+        mmf_isSignalResupply = 1;
+        mmf_resupplyType = 1;
+    };
+    class mmf_Smoke_ugl_ar_green: G_40mm_SmokeGreen {
+        mmf_isSignalMarker = 0;
+        mmf_isSignalResupply = 1;
+        mmf_resupplyType = 0;
+    };
+    class mmf_Smoke_ugl_mr_green: G_40mm_SmokeGreen {
+        mmf_isSignalMarker = 0;
+        mmf_isSignalResupply = 1;
+        mmf_resupplyType = 1;
+    };
 };

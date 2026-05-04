@@ -28,7 +28,7 @@ if (isMultiplayer) then {
 
 private _pos = getPosATL _projectile;
 private _grid = mapGridPosition _pos;
-private _marker = createMarkerLocal [format ["%1_marker", _projectile], _pos, _channel, _unit];
+private _marker = createMarkerLocal [format ["%1_resupplyMarker", _projectile], _pos, _channel, _unit];
 _marker setMarkerTypeLocal _type;
 _marker setMarkerColorLocal _color;
 

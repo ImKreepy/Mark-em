@@ -2,7 +2,7 @@
 
 if (GVAR(Vanilla_EnableFlares) isEqualTo false) then {
     private _oldArray = missionNamespace getVariable [QGVAR(grenadeExcludeList),[]];
-    private _newArray = _oldArray + [];
+    private _newArray = _oldArray + ["F_40mm_White","F_40mm_Green","F_40mm_Red","F_40mm_Yellow","F_20mm_White","F_20mm_Green","F_20mm_Red","F_20mm_Yellow"];
      missionNamespace setVariable [QGVAR(grenadeExcludeList),_newArray,true];
 };
 if (GVAR(Vanilla_EnableSmokes) isEqualTo false) then {

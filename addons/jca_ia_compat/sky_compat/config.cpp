@@ -3,7 +3,7 @@
 class CfgPatches {
     class SUBADDON {
         author = AUTHOR;
-        authors[] = {"Im Kreepy"};
+        authors[] = {"Im Kreepy, Sky"};
         url = ECSTRING(main,url);
         name = COMPONENT_NAME;
         addonRootClass = QUOTE(ADDON);
@@ -11,6 +11,13 @@ class CfgPatches {
         requiredAddons[] = {QUOTE(ADDON),"SKY_jca_flares_additions_compat_jca_ia"};
         units[] = {};
         weapons[] = {};
+        ammo[] = {
+            "SKY_JCA_GrenadeAmmo_SignalFlare_Base",
+            "SKY_JCA_GrenadeAmmo_SignalFlare_White",
+            "SKY_JCA_GrenadeAmmo_SignalFlare_Purple",
+            "SKY_JCA_GrenadeAmmo_SignalFlare_Blue",
+            "SKY_JCA_GrenadeAmmo_SignalFlare_Yellow"
+        }
         VERSION_CONFIG;
 
         skipWhenMissingDependencies = 1;
@@ -18,25 +25,21 @@ class CfgPatches {
 };
 
 class CfgAmmo {
-    class SKY_JCA_GrenadeAmmo_SignalFlare_Base;
-        class SKY_JCA_GrenadeAmmo_SignalFlare_White: SKY_JCA_GrenadeAmmo_SignalFlare_Base {
+    class JCA_GrenadeAmmo_HandFlare_Base;
+    class SKY_JCA_GrenadeAmmo_SignalFlare_Base: JCA_GrenadeAmmo_HandFlare_Base {
         mmf_isSignalMarker = 1;
+        mmf_markerType = "mmf_SmokeMarker";
+    };
+    class SKY_JCA_GrenadeAmmo_SignalFlare_White: SKY_JCA_GrenadeAmmo_SignalFlare_Base {
         mmf_markerColor = "ColorWhite";
-        mmf_markerType = "mmf_SmokeMarker";
-	};
-	class SKY_JCA_GrenadeAmmo_SignalFlare_Purple: SKY_JCA_GrenadeAmmo_SignalFlare_Base {
-        mmf_isSignalMarker = 1;
-        mmf_markerColor = "ColorCIV";
-        mmf_markerType = "mmf_SmokeMarker";
-	};
-	class SKY_JCA_GrenadeAmmo_SignalFlare_Blue: SKY_JCA_GrenadeAmmo_SignalFlare_Base {
-        mmf_isSignalMarker = 1;
+    };
+    class SKY_JCA_GrenadeAmmo_SignalFlare_Purple: SKY_JCA_GrenadeAmmo_SignalFlare_Base {
+        mmf_markerColor = "ColorCiv";
+    };
+    class SKY_JCA_GrenadeAmmo_SignalFlare_Blue: SKY_JCA_GrenadeAmmo_SignalFlare_Base {
         mmf_markerColor = "ColorBlue";
-        mmf_markerType = "mmf_SmokeMarker";
-	};
-	class SKY_JCA_GrenadeAmmo_SignalFlare_Yellow: SKY_JCA_GrenadeAmmo_SignalFlare_Base {
-        mmf_isSignalMarker = 1;
+    };
+    class SKY_JCA_GrenadeAmmo_SignalFlare_Yellow: SKY_JCA_GrenadeAmmo_SignalFlare_Base {
         mmf_markerColor = "ColorYellow";
-        mmf_markerType = "mmf_SmokeMarker";
-	};
+    };
 };

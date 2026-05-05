@@ -15,6 +15,7 @@ class CfgPatches {
             "mmf_Smoke_g_mr_green"
         };
         ammo[] = {
+            "SmokeShell",
             "SmokeShellRed",
             "SmokeShellGreen",
             "SmokeShellYellow",
@@ -27,6 +28,15 @@ class CfgPatches {
             "G_40mm_SmokePurple",
             "G_40mm_SmokeBlue",
             "G_40mm_SmokeOrange",
+            "FlareBase",
+            "F_40mm_White",
+            "F_40mm_Green",
+            "F_40mm_Red",
+            "F_40mm_Yellow",
+            "F_20mm_White",
+            "F_20mm_Green",
+            "F_20mm_Red",
+            "F_20mm_Yellow",
             "mmf_Smoke_g_ar_green",
             "mmf_Smoke_g_mr_green",
             "mmf_Smoke_ugl_ar_green",

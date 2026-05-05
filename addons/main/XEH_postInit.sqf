@@ -13,8 +13,8 @@ if (GVAR(Vanilla_EnableSmokes) isEqualTo false) then {
 
 ["CAManBase", "fired", {
 
-    params ["_unit", "_weapon", "", "", "_ammo", "", "_projectile"];
-    if (_weapon isNotEqualTo "Throw") exitWith {};
+    params ["_unit", "_weapon", "_muzzle", "", "_ammo", "", "_projectile"];
+    if (_weapon isNotEqualTo "Throw" && _muzzle isNotEqualTo "EGLM") exitWith {};
     if (isPlayer _unit && local _unit) then {
         ["mmf_throwGrenadePlayer", [_unit, _ammo, _projectile]] call CBA_fnc_localEvent;
     };

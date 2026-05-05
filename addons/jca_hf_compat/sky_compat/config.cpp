@@ -17,7 +17,7 @@ class CfgPatches {
             "SKY_JCA_GrenadeAmmo_SignalFlare_Purple",
             "SKY_JCA_GrenadeAmmo_SignalFlare_Blue",
             "SKY_JCA_GrenadeAmmo_SignalFlare_Yellow"
-        }
+        };
         VERSION_CONFIG;
 
         skipWhenMissingDependencies = 1;

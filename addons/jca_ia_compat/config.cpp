@@ -7,7 +7,7 @@ class CfgPatches {
         url = ECSTRING(main,url);
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"mmf_main","weapons_f_JCA_IA"};
+        requiredAddons[] = {"mmf_main","weapons_f_JCA_IA","Weapons_F_JCA_HF_Explosives"};
         units[] = {};
         weapons[] = {};
         magazines[] = {
@@ -56,13 +56,13 @@ class CfgMagazines {
 		displayName = "Ammo Resupply Hand Flare (Green)";
 		displayNameShort = "Ammo Resupply Hand Flare";
 		descriptionShort = "Type: Resupply<br />Rounds: 1<br />Used in: Hand";
-		picture = "\weapons_f_JCA_HF\Explosives\data\UI\Icon_HandFlare_green_CA.paa";
+		picture = QPATHTOF(data\mmf_jca_signalFlare_ar_green_ca.paa);
 		ammo = "mmf_jca_signalFlare_ar_green";
 	};
 	class mmf_jca_signalFlare_mr_green: mmf_jca_signalFlare_ar_green {
 		displayName = "Medical Resupply Hand Flare (Green)";
 		displayNameShort = "Medical Resupply Hand Flare";
-		picture = "\weapons_f_JCA_HF\Explosives\data\UI\Icon_HandFlare_green_CA.paa";
+		picture = QPATHTOF(data\mmf_jca_signalFlare_mr_green_ca.paa);
 		ammo = "mmf_jca_signalFlare_mr_green";
 	};
 };

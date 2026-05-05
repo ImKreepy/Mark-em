@@ -2,34 +2,32 @@ class CfgMagazines {
     class 1Rnd_SmokeGreen_Grenade_shell;
     class mmf_1rnd_Smoke_ugl_ar_green: 1Rnd_SmokeGreen_Grenade_shell {
 		author = AUTHOR;
-		displayName = "1Rnd Smoke Ammo Resupply Green";
+		displayName = "Ammo Resupply Smoke Round (Green)";
 		picture = QPATHTOF(data\mmf_smoke_ugl_ar_green_ca.paa);
 		ammo = "mmf_Smoke_ugl_ar_green";
-		displayNameShort = "1Rnd Smoke Ammo Resupply";
-		descriptionShort = "1Rnd Smokeshell Green, Ammo Resupply.";
+		displayNameShort = "Ammo Resupply Smoke Round";
+		descriptionShort = "Type: Resupply<br />Rounds: 1<br />Used in: UGL";
     };
     class mmf_1rnd_Smoke_ugl_mr_green: mmf_1rnd_Smoke_ugl_ar_green {
-		displayName = "1Rnd Smoke Medical Resupply Green";
+		displayName = "Ammo Resupply Smoke Round (Green)";
 		picture = QPATHTOF(data\mmf_smoke_ugl_mr_green_ca.paa);
 		ammo = "mmf_Smoke_ugl_mr_green";
-		displayNameShort = "1Rnd Smoke Medical Resupply";
-		descriptionShort = "1Rnd Smokeshell Green, Medical Resupply.";
+		displayNameShort = "Ammo Resupply Smoke Round";
     };
     class SmokeShellGreen;
 	class mmf_Smoke_g_ar_green: SmokeShellGreen {
 		author = AUTHOR;
-		displayName = "Smoke Ammo Resupply Green";
+		displayName = "M18 Ammo Resupply Smoke (Green)";
 		picture = QPATHTOF(data\mmf_smoke_g_ar_green_ca.paa);
 		ammo = "mmf_Smoke_g_ar_green";
-		displayNameShort = "Smoke Ammo Resupply";
-		descriptionShort = "Smoke grenade Green, Ammo Resupply.";
+		displayNameShort = "M18 Ammo Resupply Smoke";
+		descriptionShort = "Type: Resupply<br />Rounds: 1<br />Used in: Hand";
 	};
 	class mmf_Smoke_g_mr_green: mmf_Smoke_g_ar_green {
-		displayName = "Smoke Medical Resupply Green";
+		displayName = "M18 Ammo Resupply Smoke (Green)";
 		picture = QPATHTOF(data\mmf_smoke_g_mr_green_ca.paa);
 		ammo = "mmf_Smoke_g_mr_green";
-		displayNameShort = "Smoke Medical Resupply";
-		descriptionShort = "Smoke grenade Green, Medical Resupply.";
+		displayNameShort = "M18 Ammo Resupply Smoke";
 	};
 };
 class CfgMagazineWells {

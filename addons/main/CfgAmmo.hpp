@@ -63,15 +63,15 @@ class CfgAmmo {
         mmf_isSignalMarker = 1;
         mmf_markerColor = "ColorWhite";
     };
-    class F_40mm_Green: FlareBase {
+    class F_40mm_Green: F_40mm_White {
         mmf_isSignalMarker = 1;
         mmf_markerColor = "ColorGreen";
     };
-    class F_40mm_Red: FlareBase {
+    class F_40mm_Red: F_40mm_White {
         mmf_isSignalMarker = 1;
         mmf_markerColor = "ColorRed";
     };
-    class F_40mm_Yellow: FlareBase {
+    class F_40mm_Yellow: F_40mm_White {
         mmf_isSignalMarker = 1;
         mmf_markerColor = "ColorYellow";
     };
@@ -79,15 +79,15 @@ class CfgAmmo {
         mmf_isSignalMarker = 1;
         mmf_markerColor = "ColorWhite";
     };
-    class F_20mm_Green: FlareBase {
+    class F_20mm_Green: F_20mm_White {
         mmf_isSignalMarker = 1;
         mmf_markerColor = "ColorGreen";
     };
-    class F_20mm_Red: FlareBase {
+    class F_20mm_Red: F_20mm_White {
         mmf_isSignalMarker = 1;
         mmf_markerColor = "ColorRed";
     };
-    class F_20mm_Yellow: FlareBase {
+    class F_20mm_Yellow: F_20mm_White {
         mmf_isSignalMarker = 1;
         mmf_markerColor = "ColorYellow";
     };

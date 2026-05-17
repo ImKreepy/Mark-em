@@ -41,6 +41,7 @@ private _para1 = "steerable_parachute_f" createVehicle [0,0,0];
 _box attachTo [_para1,[0,0,0]];
 private _newPos = [_pos select 0, _pos select 1, GVAR(SpawnHeight)];
 _para1 setPos _newPos;
+_para1 setDir windDir;
 
 _unit groupChat format ["Marker placed at '%1'",_grid];
 _unit groupChat "Resupply incoming...";

@@ -21,6 +21,6 @@
             <li><mark>marker = "MarkerType";</mark> is the type of map marker that will show on the map. Replacing <mark>MarkerType</mark> with either <mark>mmf_SmokeMarker</mark>, <mark>mmf_LightMarker</mark>, or your own custom CfgMarker class.</li>
             <li><mark>color = "ColorHere";</mark> sets the marker color of your flare. Replacing <mark>ColorHere</mark> with a <a href="https://community.bistudio.com/wiki/Arma_3:_CfgMarkerColors">CfgMarkerColor class</a> or can be simple RGBA <i>#(r,g,b,a)</i>.</li>
         </ul>
-        <img src="https://github.com/ImKreepy/Mark-em/blob/master/mmf_example.png" width="357">
     </body>
+    <img src="https://github.com/ImKreepy/Mark-em/blob/master/mmf_example.png" width="357">
 </p>

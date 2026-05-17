@@ -29,7 +29,7 @@ class CfgAmmo {
     class ACE_G_Handflare_White: SmokeShell {
         class MMF_Config {
             type = 1;
-            marker = "mmf_SmokeMarker";
+            marker = "mmf_LightMarker";
             color = "ColorWhite";
         };
     };

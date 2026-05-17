@@ -19,7 +19,7 @@ class CfgAmmo {
         };
     };
     class SmokeShellYellow: SmokeShell {
-        class MMF_Config {
+        class MMF_Config: MMF_Config {
             color = "ColorYellow";
         };
     };
@@ -29,18 +29,18 @@ class CfgAmmo {
         };
     };
     class SmokeShellBlue: SmokeShell {
-        class MMF_Config {
+        class MMF_Config: MMF_Config {
             color = "ColorBlue";
         };
     };
     class SmokeShellOrange: SmokeShell {
-        class MMF_Config {
+        class MMF_Config: MMF_Config {
             color = "ColorOrange";
         };
     };
     
     class G_40mm_Smoke: SmokeShell {
-        class MMF_Config {
+        class MMF_Config: MMF_Config {
             color = "ColorWhite";
         };
     };

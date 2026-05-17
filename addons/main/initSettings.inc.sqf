@@ -113,3 +113,13 @@
     {},
     false
 ] call CBA_fnc_addSetting;
+[
+    QGVAR(SpawnHeight),
+    "SLIDER",
+    [CSTRING(SpawnHeight_DisplayName), CSTRING(SpawnHeight_Description)],
+    [QUOTE(PREFIX_BEAUTIFIED), CSTRING(ResupplySettings_Category)],
+    [20, 500, 100, 0],
+    true,
+    {},
+    false
+] call CBA_fnc_addSetting;

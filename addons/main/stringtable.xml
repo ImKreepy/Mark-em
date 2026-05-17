@@ -49,6 +49,12 @@
         <Key ID="STR_mmf_Main_ResupplySettings_Category">
             <English>Resupplies</English>
         </Key>
+        <Key ID="STR_mmf_Main_SpawnHeight_Description">
+            <English>Controls the height at which resupplies are spawned, Above Terrain Level.</English>
+        </Key>
+        <Key ID="STR_mmf_Main_SpawnHeight_DisplayName">
+            <English>Spawn Height</English>
+        </Key>
         <Key ID="STR_mmf_Main_URL">
             <English>https://github.com/ImKreepy/Mark-em</English>
         </Key>

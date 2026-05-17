@@ -29,22 +29,29 @@ class CfgPatches {
 class CfgAmmo {
     class JCA_GrenadeAmmo_HandFlare_Base;
     class JCA_GrenadeAmmo_SignalFlare_Red: JCA_GrenadeAmmo_HandFlare_Base {
-        mmf_isSignalMarker = 1;
-        mmf_markerColor = "ColorRed";
-        mmf_markerType = "mmf_SmokeMarker";
+        class MMF_Config {
+            type = 1;
+            marker = "mmf_SmokeMarker";
+            color = "ColorWhite";
+        };
     };
     class JCA_GrenadeAmmo_SignalFlare_Green: JCA_GrenadeAmmo_HandFlare_Base {
-        mmf_isSignalMarker = 1;
-        mmf_markerColor = "ColorGreen";
-        mmf_markerType = "mmf_SmokeMarker";
+        class MMF_Config {
+            type = 1;
+            marker = "mmf_SmokeMarker";
+            color = "ColorGreen";
+        };
     };
     class JCA_GrenadeAmmo_HandFlare_Green;
     class mmf_jca_signalFlare_ar_green: JCA_GrenadeAmmo_HandFlare_Green {
-        mmf_isSignalResupply = 1;
-        mmf_resupplyType = 0;
+        class MMF_Config {
+            type = 2;
+        };
     };
     class mmf_jca_signalFlare_mr_green: mmf_jca_signalFlare_ar_green {
-        mmf_resupplyType = 1;
+        class MMF_Config {
+            type = 3;
+        };
     };
 };
 

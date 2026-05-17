@@ -27,17 +27,25 @@ class CfgPatches {
 class CfgAmmo {
     class SmokeShell;
     class ACE_G_Handflare_White: SmokeShell {
-        mmf_isSignalMarker = 1;
-        mmf_markerColor = "ColorWhite";
-        mmf_markerType = "mmf_LightMarker";
+        class MMF_Config {
+            type = 1;
+            marker = "mmf_SmokeMarker";
+            color = "ColorWhite";
+        };
     };
     class ACE_G_Handflare_Red: ACE_G_Handflare_White {
-        mmf_markerColor = "ColorRed";
+        class MMF_Config: MMF_Config {
+            color = "ColorRed";
+        };
     };
     class ACE_G_Handflare_Green: ACE_G_Handflare_White {
-        mmf_markerColor = "ColorGreen";
+        class MMF_Config: MMF_Config {
+            color = "ColorGreen";
+        };
     };
     class ACE_G_Handflare_Yellow: ACE_G_Handflare_White {
-        mmf_markerColor = "ColorYellow";
+        class MMF_Config: MMF_Config {
+            color = "ColorYellow";
+        };
     };
 };

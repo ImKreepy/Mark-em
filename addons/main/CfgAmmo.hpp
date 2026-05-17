@@ -2,110 +2,146 @@
 class CfgAmmo {
     class GrenadeHand;
     class SmokeShell: GrenadeHand {
-        mmf_markerType = "mmf_SmokeMarker";
+        class MMF_Config {
+            type = 1;                       // 0 = Disabled, 1 = Marker, 2 = Ammo Resupply, 3 = Medical Resupply
+            marker = "mmf_SmokeMarker";     // CfgMarker classname if the marker you want to display
+            color = "ColorWhite";           // Color of the marker on the map when this ammo is used. Should correspond to the color of the smoke produced by the ammo
+        };
     };
     class SmokeShellRed: SmokeShell {
-        mmf_isSignalMarker = 1;
-        mmf_markerColor = "ColorRed";
+        class MMF_Config: MMF_Config {
+            color = "ColorRed";
+        };
     };
     class SmokeShellGreen: SmokeShell {
-        mmf_isSignalMarker = 1;
-        mmf_markerColor = "ColorGreen";
+        class MMF_Config: MMF_Config {
+            color = "ColorGreen";
+        };
     };
     class SmokeShellYellow: SmokeShell {
-        mmf_isSignalMarker = 1;
-        mmf_markerColor = "ColorYellow";
+        class MMF_Config {
+            color = "ColorYellow";
+        };
     };
     class SmokeShellPurple: SmokeShell {
-        mmf_isSignalMarker = 1;
-        mmf_markerColor = "ColorCiv";
+        class MMF_Config {
+            color = "ColorCiv";
+        };
     };
     class SmokeShellBlue: SmokeShell {
-        mmf_isSignalMarker = 1;
-        mmf_markerColor = "ColorBlue";
+        class MMF_Config {
+            color = "ColorBlue";
+        };
     };
     class SmokeShellOrange: SmokeShell {
-        mmf_isSignalMarker = 1;
-        mmf_markerColor = "ColorOrange";
+        class MMF_Config {
+            color = "ColorOrange";
+        };
     };
     
-    class G_40mm_Smoke;
+    class G_40mm_Smoke: SmokeShell {
+        class MMF_Config {
+            color = "ColorWhite";
+        };
+    };
     class G_40mm_SmokeRed: G_40mm_Smoke {
-        mmf_isSignalMarker = 1;
-        mmf_markerColor = "ColorRed";
+        class MMF_Config: MMF_Config {
+            color = "ColorRed";
+        };
     };
     class G_40mm_SmokeGreen: G_40mm_Smoke {
-        mmf_isSignalMarker = 1;
-        mmf_markerColor = "ColorGreen";
+        class MMF_Config: MMF_Config {
+            color = "ColorGreen";
+        };
     };
     class G_40mm_SmokeYellow: G_40mm_Smoke {
-        mmf_isSignalMarker = 1;
-        mmf_markerColor = "ColorYellow";
+        class MMF_Config: MMF_Config {
+            color = "ColorYellow";
+        };
     };
     class G_40mm_SmokePurple: G_40mm_Smoke {
-        mmf_isSignalMarker = 1;
-        mmf_markerColor = "ColorCiv";
+        class MMF_Config: MMF_Config {
+            color = "ColorCiv";
+        };
     };
     class G_40mm_SmokeBlue: G_40mm_Smoke {
-        mmf_isSignalMarker = 1;
-        mmf_markerColor = "ColorBlue";
+        class MMF_Config: MMF_Config {
+            color = "ColorBlue";
+        };
     };
     class G_40mm_SmokeOrange: G_40mm_Smoke {
-        mmf_isSignalMarker = 1;
-        mmf_markerColor = "ColorOrange";
+        class MMF_Config: MMF_Config {
+            color = "ColorOrange";
+        };
     };
 
     class FlareCore;
     class FlareBase: FlareCore {
-        mmf_markerType = "mmf_LightMarker";
+        class MMF_Config {
+            type = 1;
+            marker = "mmf_LightMarker";
+            color = "ColorWhite";
+        };
     };
     class F_40mm_White: FlareBase {
-        mmf_isSignalMarker = 1;
-        mmf_markerColor = "ColorWhite";
+        class MMF_Config: MMF_Config {
+            color = "ColorWhite";
+        };
     };
     class F_40mm_Green: F_40mm_White {
-        mmf_isSignalMarker = 1;
-        mmf_markerColor = "ColorGreen";
+        class MMF_Config: MMF_Config {
+            color = "ColorGreen";
+        };
     };
     class F_40mm_Red: F_40mm_White {
-        mmf_isSignalMarker = 1;
-        mmf_markerColor = "ColorRed";
+        class MMF_Config: MMF_Config {
+            color = "ColorRed";
+        };
     };
     class F_40mm_Yellow: F_40mm_White {
-        mmf_isSignalMarker = 1;
-        mmf_markerColor = "ColorYellow";
+        class MMF_Config: MMF_Config {
+            color = "ColorYellow";
+        };
     };
     class F_20mm_White: FlareBase {
-        mmf_isSignalMarker = 1;
-        mmf_markerColor = "ColorWhite";
+        class MMF_Config: MMF_Config {
+            color = "ColorWhite";
+        };
     };
     class F_20mm_Green: F_20mm_White {
-        mmf_isSignalMarker = 1;
-        mmf_markerColor = "ColorGreen";
+        class MMF_Config: MMF_Config {
+            color = "ColorGreen";
+        };
     };
     class F_20mm_Red: F_20mm_White {
-        mmf_isSignalMarker = 1;
-        mmf_markerColor = "ColorRed";
+        class MMF_Config: MMF_Config {
+            color = "ColorRed";
+        };
     };
     class F_20mm_Yellow: F_20mm_White {
-        mmf_isSignalMarker = 1;
-        mmf_markerColor = "ColorYellow";
+        class MMF_Config: MMF_Config {
+            color = "ColorYellow";
+        };
     };
 
     class mmf_Smoke_g_ar_green: SmokeShellGreen {
-        mmf_isSignalMarker = 0;
-        mmf_isSignalResupply = 1;
-        mmf_resupplyType = 0;
+        class MMF_Config {
+            type = 2;
+        };
     };
     class mmf_Smoke_g_mr_green: mmf_Smoke_g_ar_green {
-        mmf_resupplyType = 1;
+        class MMF_Config: MMF_Config {
+            type = 3;
+        };
     };
     class mmf_Smoke_ugl_ar_green: G_40mm_SmokeGreen {
-        mmf_isSignalMarker = 0;
-        mmf_isSignalResupply = 1;
-        mmf_resupplyType = 0;
+        class MMF_Config {
+            type = 2;
+        };
     };
     class mmf_Smoke_ugl_mr_green: mmf_Smoke_ugl_ar_green {
-        mmf_resupplyType = 1;
+        class MMF_Config: MMF_Config {
+            type = 3;
+        };
     };
 };

@@ -33,39 +33,43 @@ private _custom = [];
 } forEach parseSimpleArray GVAR(Customs);
 
 private _cfg = configFile >> "CfgAmmo" >> _ammo;
+private _type = getNumber (_cfg >> "MMF_Config" >> "type");
+
+if (_type isEqualTo 0) exitWith {};
+
 private _fuzeTime = getNumber (_cfg >> "explosionTime");
 private _timeToLive = getNumber (_cfg >> "timeToLive");
 
-if (getNumber (_cfg >> "mmf_isSignalMarker") isEqualTo 1) then {
+if (_type isEqualTo 1) then {
 
-    private _color = getText (_cfg >> "mmf_markerColor");
-    private _type = getText (_cfg >> "mmf_markerType");
+    private _color = getText (_cfg >> "MMF_Config" >> "color");
+    private _marker = getText (_cfg >> "MMF_Config" >> "marker");
 
-    [FUNC(handleSignalMarker), [_projectile, _color, _timeToLive, _unit, _type], _fuzeTime] call CBA_fnc_waitAndExecute;
+    [FUNC(handleSignalMarker), [_projectile, _color, _timeToLive, _unit, _marker], _fuzeTime] call CBA_fnc_waitAndExecute;
 };
 
 if (_isCustom) then {
-    _custom params ["_class","_color","_type"];
-    [FUNC(handleSignalMarker), [_projectile, _color, _timeToLive, _unit, _type], _fuzeTime] call CBA_fnc_waitAndExecute;
+    _custom params ["_class","_color","_marker"];
+    [FUNC(handleSignalMarker), [_projectile, _color, _timeToLive, _unit, _marker], _fuzeTime] call CBA_fnc_waitAndExecute;
 };
 
-if (getNumber (_cfg >> "mmf_isSignalResupply") isEqualTo 1) then {
+if (_type isEqualTo 2 || _type isEqualTo 3) then {
 
-    private _type = getNumber (_cfg >> "mmf_resupplyType");
     private _side = side _unit;
     private _color = [_side, true] call BIS_fnc_sideColor;
     private _chat = "";
+    private _marker = "";
     switch (_type) do {
-        case 0: {
-            _type = "mmf_Resupply_Ammo";
+        case 2: {
+            _marker = "mmf_Resupply_Ammo";
             _chat = "Ammo Resupply"
         };
-        case 1: {
-            _type = "mmf_Resupply_Medical";
+        case 3: {
+            _marker = "mmf_Resupply_Medical";
             _chat = "Medical Resupply"
         };
     };
 
     _unit groupChat format ["I have requsted a %1",_chat];
-    [FUNC(handleSignalResupply), [_projectile, _unit, _type, _color], 5] call CBA_fnc_waitAndExecute;
+    [FUNC(handleSignalResupply), [_projectile, _unit, _marker, _color], 5] call CBA_fnc_waitAndExecute;
 };
